@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Warkop Kopi Santuy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #1b0f0a;
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+            url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 110px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #f1c27d;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f1c27d;
+            margin-bottom: 40px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #2a1811;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body h3 {
+            margin: 0 0 8px;
+            color: #ffd28a;
+        }
+
+        .price {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        .alamat {
+            background: #2a1811;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .map {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        footer {
+            background: #120804;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Warkop Kopi Santuy</h1>
+    <p>Ngopi hangat, obrolan nikmat ☕ </p>
+    <p>selamat datang diwarkop kopi Santuy</p>
+    <p>selamat datang diwarkop onk niha,ini merupakanusaha kopiyang sudah berdiri dari tahun 1999.usaha warkop ini berkembang dan dan terus berkembang menggikuti zaman ini....</p>
+</header>
+
+<section>
+    <h2>Menu Kopi</h2>
+    <div class="menu">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Kopi Hitam">
+            <div class="card-body">
+                <h3>Kopi Hitam</h3>
+                <p class="price">Rp8.000</p>
+                <p>Kopi robusta khas warkop.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521302080371-4d9c1c5e95f1" alt="Kopi Susu">
+            <div class="card-body">
+                <h3>Kopi Susu</h3>
+                <p class="price">Rp10.000</p>
+                <p>Perpaduan kopi dan susu lembut.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1510626176961-4b37d0f0b8a3" alt="Espresso">
+            <div class="card-body">
+                <h3>Espresso</h3>
+                <p class="price">Rp12.000</p>
+                <p>Kopi kental, bikin melek.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" alt="Cappuccino">
+            <div class="card-body">
+                <h3>Cappuccino</h3>
+                <p class="price">Rp15.000</p>
+                <p>Foam susu lembut & nikmat.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Es Kopi Gula Aren">
+            <div class="card-body">
+                <h3>Es Kopi Gula Aren</h3>
+                <p class="price">Rp18.000</p>
+                <p>Favorit nongkrong anak muda.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Alamat & Lokasi</h2>
+
+    <div class="alamat">
+        <p><strong>📍 Alamat:</strong></p>
+        <p>
+            Jl. desa dahana tabaloho. 27<br>
+            Kecamatan Gunungsitoli<br>
+            Kota gunungsitoli, Indonesia
+        </p>
+        <p><strong>🕒 Jam Buka:</strong> 16.00 – 02.00 WIB</p>
+    </div>
+
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6666666666665!2d106.8166667!3d-6.2000000"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<footer>
+    © 2026 Warkop Kopi Santuy | Nongkrong tanpa batas ☕
+</footer>
+
+</body>
+</html>
